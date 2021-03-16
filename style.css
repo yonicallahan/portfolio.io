@@ -1,3 +1,4 @@
+/*formatting for all h1 headings*/
 h1{
   color: #17183a;
   text-align: center;
@@ -5,6 +6,7 @@ h1{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/*formatting for all h2 headings*/
 h2{
   color: #17183a;
   text-align: center;
@@ -12,29 +14,47 @@ h2{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/*formatting for all h3 headings*/
 h3{
   color: #17183a;
-  text-align: left;
+  text-align: center;
   font-size: 18pt;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-h5{
+/*formatting for all h4 headings*/
+h4{
   color:#f5f3f5;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Courier New', Courier, monospace, monospace;
 }
 
+/*formatting for all h5 headings, italics included in instructions to further differentiate from other types of headings, not currently used, pre-emptive*/
+h5{
+  color:#f5f3f5;
+  font-family:'Courier New', Courier, monospace, monospace;
+  font-style: italic;
+}
+/*footer formatting, center-block entire footer content*/
 footer{
   color: #f5f3f5;
   text-align: center;
 }
+/*specifically target body-paragraph class to create background that makes the text pop out from the background*/
+.body-paragraph{
+  background-color: rgba(196,208,212,0.4);
+  margin-left: 8%;
+  margin-right: 8%;
+  text-indent: 5%; 
+}
 
+/*creates a background and formats unspecified text fonts for footer*/
 .site-footer{
   color: #f5f3f5;
   background: #17183a; 
   font-family: monaco, Consolas, "Lucida Console", monospace; 
 }
 
+/*default formatting for all paragraphs of unspecified class*/
 p{
   color: #0b0a09;
   text-align: left;
@@ -45,7 +65,7 @@ p{
   font-weight: 400; 
   line-height: 16px; 
 }
-
+/*handle subtopic class to create paragraphs that sit outside of standard paragraphs and provide contact information/options*/
 .subtopic{
   color: #17183a;
   font-family: monaco, Consolas, "Lucida Console", monospace; 
@@ -53,37 +73,64 @@ p{
   font-weight: bold;
   text-align: center;
 }
-
+/*optimize unordered lists for visibility and page weight*/
 ul{
+  margin-right: 15%;
   margin: 0%;
   color:#0b0a09;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: monaco, Consolas, "Lucida Console", monospace; 
   font-size: 11px;
+  list-style-type: circle;
+  text-align: justify;
+}
+/*reformat ordered lists to model unordered lists in appearance, margin use, and color/font*/
+ol{
+  margin-right: 15%;
+  margin: 0%;
+  color:#0b0a09;
+  font-family: monaco, Consolas, "Lucida Console", monospace; 
+  font-size: 11px;
+  text-align: justify;
 }
 
-.center {
+/*handle formatting of all objects with center class */
+.center{
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 5%
 }
-
-.external-link{
-  color: #f5f3f5
-}
-
+/*format background color*/
 body{
   background-color: #f5f3f5;
 }
-
+/*change color of links based on behavior pseudoclass*/
 a:link{
   color: #4f75cf;
 }
 
 a:visited{
-  color: #570000;
+  color: #ffc400;
 }
 
 a:hover{
   color: #db93b0
+}
+/*handle end-line class to create visual "continuation" of parent paragraph from line above list or image breaking up the paragraph*/
+.end-line{
+   color: #0b0a09;
+  text-align: left;
+  font-family: monaco, Consolas, "Lucida Console", monospace; 
+  font-size: 12px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 400; 
+  line-height: 16px;
+  text-indent: 0%;
+}
+
+/*only applies formatting to links designated with class "external-link"*/
+.external-link{
+  color: #f5f3f5;
+  font-size: 12px;
 }
